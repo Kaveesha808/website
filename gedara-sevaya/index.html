@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ගෙදර සේවය - ඔබේ ගෙදර සියලු අවශ්‍යතා සඳහා">
+    <title>ගෙදර සේවය | ගෙදර සේවා</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- ඉහළ තීරුව -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> 0112 345 678</span>
+                    <span><i class="fas fa-envelope"></i> info@gedarasevaya.lk</span>
+                    <span><i class="fas fa-clock"></i> අප්‍රේල් 8.00 AM - 6.00 PM</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ශීර්ෂකය -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <!-- ලොගෝ -->
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="ගෙදර සේවය ලොගෝ" height="40">
+                    <span>ගෙදර සේවය</span>
+                </a>
+
+                <!-- සංචාලන සබැඳි -->
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link active"><i class="fas fa-home"></i> මුල් පිටුව</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link"><i class="fas fa-concierge-bell"></i> සේවා</a></li>
+                    <li class="nav-item"><a href="providers.html" class="nav-link"><i class="fas fa-users"></i> සේවා සපයන්නන්</a></li>
+                    <li class="nav-item"><a href="#how-it-works" class="nav-link"><i class="fas fa-cogs"></i> ක්‍රියාකාරීත්වය</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> අප ගැන</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-address-book"></i> සම්බන්ධ වන්න</a></li>
+                </ul>
+
+                <!-- පරිශීලක ක්‍රියා -->
+                <div class="user-actions">
+                    <a href="login.html" class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> ප්‍රවිශ්ඨ වන්න</a>
+                    <a href="register.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> ලියාපදිංචි වන්න</a>
+                    <a href="dashboard.html" class="btn btn-secondary"><i class="fas fa-tachometer-alt"></i> මානය</a>
+                </div>
+
+                <!-- ජංගම මෙනු බොත්තම -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- වීරයා කොටස -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">ගෙදර සියලු අවශ්‍යතා සඳහා <span class="highlight">එක් තැනකින්</span></h1>
+                <p class="hero-subtitle">විශ්වසනීය විදුලි කාර්මිකයින්, වාහකයින්, ගුරුවරුන්, රියැදුරු සහ මෙසේන් සේවා ඔබේ ගෙදර දොරටම</p>
+                
+                <!-- සෙවුම් පෙට්ටිය -->
+                <div class="search-container">
+                    <div class="search-box">
+                        <div class="search-input">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="serviceSearch" placeholder="ඔබට අවශ්‍ය සේවාව ඇතුළත් කරන්න...">
+                        </div>
+                        <div class="search-input">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" id="locationSearch" placeholder="ඔබේ පිහිටීම ඇතුළත් කරන්න...">
+                        </div>
+                        <button class="btn btn-primary btn-search" id="searchBtn">
+                            <i class="fas fa-search"></i> සේවා සොයන්න
+                        </button>
+                    </div>
+                    <div class="search-tags">
+                        <span>ජනප්‍රිය:</span>
+                        <a href="#" class="tag">විදුලි කාර්මික</a>
+                        <a href="#" class="tag">වාහක</a>
+                        <a href="#" class="tag">TV හිමි</a>
+                        <a href="#" class="tag">ගුරුවරයා</a>
+                        <a href="#" class="tag">රියැදුරු</a>
+                    </div>
+                </div>
+
+                <!-- සංඛ්‍යාලේඛන -->
+                <div class="stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p>සේවා සපයන්නන්</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10,000+</h3>
+                        <p>සතුටු පරිශීලකයින්</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50,000+</h3>
+                        <p>සම්පූර්ණ කළ සේවා</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>සහාය සේවාව</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- සේවා කොටස -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">අපගේ <span class="highlight">සේවා</span></h2>
+                <p class="section-subtitle">විවිධ ගෘහස්ථ සේවා අපගේ විශ්වසනීය සේවා සපයන්නන්ගෙන්</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- සේවා කාඩ්පත 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="service-title">විදුලි කාර්මික</h3>
+                    <p class="service-description">විදුලි ගැටළු, වයරින්, පංකා, ආලෝක සවිකිරීම් සහ අලුත්වැඩියා</p>
+                    <div class="service-meta">
+                        <span><i class="fas fa-clock"></i> 2-4 පැය</span>
+                        <span><i class="fas fa-star"></i> 4.8/5.0</span>
+                    </div>
+                    <a href="services.html#electrician" class="btn btn-outline">වැඩි විස්තර</a>
+                </div>
+
+                <!-- සේවා කාඩ්පත 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-faucet"></i>
+                    </div>
+                    <h3 class="service-title">වාහක</h3>
+                    <p class="service-description">නල, කාලු, ජල පොම්ප, උණුසුම් ජල සේවා සහ අලුත්වැඩියා</p>
+                    <div class="service-meta">
+                        <span><i class="fas fa-clock"></i> 1-3 පැය</span>
+                        <span><i class="fas fa-star"></i> 4.6/5.0</span>
+                    </div>
+                    <a href="services.html#plumber" class="btn btn-outline">වැඩි විස්තර</a>
+                </div>
+
+                <!-- අනෙකුත් සේවා කාඩ්පත් එකතු කරන්න -->
+                <!-- සේවා කාඩ්පත 3: TV හා ඉලෙක්ට්‍රොනික -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="service-title">TV හා ඉලෙක්ට්‍රොනික</h3>
+                    <p class="service-description">TV හිමි, DTH, වීඩියෝ දොරටපල, CCTV සවිකිරීම් සහ අලුත්වැඩියා</p>
+                    <div class="service-meta">
+                        <span><i class="fas fa-clock"></i> 2-5 පැය</span>
+                        <span><i class="fas fa-star"></i> 4.7/5.0</span>
+                    </div>
+                    <a href="services.html#electronics" class="btn btn-outline">වැඩි විස්තර</a>
+                </div>
+
+                <!-- සේවා කාඩ්පත 4: ගුරුවරුන් -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="service-title">ගුරුවරුන්</h3>
+                    <p class="service-description">ගණිතය, විද්‍යාව, ඉංග්‍රීසි, සංගීතය, කලාව සහ විවිධ විෂයන් සඳහා</p>
+                    <div class="service-meta">
+                        <span><i class="fas fa-clock"></i> වෙනත්</span>
+                        <span><i class="fas fa-star"></i> 4.9/5.0</span>
+                    </div>
+                    <a href="services.html#tutors" class="btn btn-outline">වැඩි විස්තර</a>
+                </div>
+
+                <!-- සේවා කාඩ්පත 5: රියැදුරු -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="service-title">රියැදුරු</h3>
+                    <p class="service-description">දිනපතා ගමන්, විශේෂ අවස්ථා, සංචාර සහ රථ වාහන භාර ගැනීම්</p>
+                    <div class="service-meta">
+                        <span><i class="fas fa-clock"></i> වෙනත්</span>
+                        <span><i class="fas fa-star"></i> 4.5/5.0</span>
+                    </div>
+                    <a href="services.html#drivers" class="btn btn-outline">වැඩි විස්තර</a>
+                </div>
+
+                <!-- සේවා කාඩ්පත 6: මෙසේන් සේවා -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3 class="service-title">මෙසේන් සේවා</h3>
+                    <p class="service-description">ගෘහ පිරිසිදු කිරීම, ලිපිකිරීම්, ළමා පරික්ෂාව සහ ගෘහ සේවා</p>
+                    <div class="service-meta">
+                        <span><i class="fas fa-clock"></i> 2-8 පැය</span>
+                        <span><i class="fas fa-star"></i> 4.4/5.0</span>
+                    </div>
+                    <a href="services.html#maids" class="btn btn-outline">වැඩි විස්තර</a>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="services.html" class="btn btn-primary">සියලුම සේවා බලන්න <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ක්‍රියාකාරීත්වය කොටස -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">එය <span class="highlight">ක්‍රියා කරන ආකාරය</span></h2>
+                <p class="section-subtitle">සරල පියවර 4කින් ඔබේ ගෙදර සේවා ලබාගන්න</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>සේවාව තෝරන්න</h3>
+                    <p>ඔබට අවශ්‍ය සේවාව තෝරන්න හෝ අපගේ සෙවුම් ක්‍රමය භාවිතා කරන්න</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h3>සේවා සපයන්නා තෝරන්න</h3>
+                    <p>රේටින්, මිල සහ සමාලෝචන බලා අනුගත සේවා සපයන්නා තෝරන්න</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>ඇණවුම් කරන්න</h3>
+                    <p>දිනය, වේලාව සහ ස්ථානය නියම කර ඇණවුම් කරන්න</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>සේවාව ලබාගන්න</h3>
+                    <p>සේවා සපයන්නා ඔබේ ගෙදරට පැමිණ සේවාව සපයයි</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- සේවා සපයන්නන් කොටස -->
+    <section class="providers-section" id="providers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">විශිෂ්ට <span class="highlight">සේවා සපයන්නන්</span></h2>
+                <p class="section-subtitle">අපගේ විශ්වසනීය සහ සත්කාරක සේවා සපයන්නන් සමඟ සම්බන්ධ වන්න</p>
+            </div>
+
+            <div class="providers-grid">
+                <!-- සේවා සපයන්නා 1 -->
+                <div class="provider-card">
+                    <div class="provider-badge">වඩාත්ම ජනප්‍රිය</div>
+                    <div class="provider-image">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="රවින්ද්‍ර පෙරේරා">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">රවින්ද්‍ර පෙරේරා</h3>
+                        <p class="provider-category"><i class="fas fa-bolt"></i> විදුලි කාර්මික</p>
+                        <div class="provider-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <span class="review-count">(124 සමාලෝචන)</span>
+                        </div>
+                        <p class="provider-experience"><i class="fas fa-briefcase"></i> වසර 15+ පළපුරුද්ද</p>
+                        <p class="provider-location"><i class="fas fa-map-marker-alt"></i> කොළඹ 05</p>
+                        <div class="provider-skills">
+                            <span class="skill-tag">වයරින්</span>
+                            <span class="skill-tag">පංකා</span>
+                            <span class="skill-tag">ආලෝක</span>
+                        </div>
+                        <div class="provider-action">
+                            <a href="#" class="btn btn-primary btn-sm">පැතිකඩ බලන්න</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fas fa-phone"></i> ඇමතුම</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- සේවා සපයන්නා 2 -->
+                <div class="provider-card">
+                    <div class="provider-badge">අලුතින් එක් වූ</div>
+                    <div class="provider-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="කමලි පෙරේරා">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">කමලි පෙරේරා</h3>
+                        <p class="provider-category"><i class="fas fa-chalkboard-teacher"></i> ගුරුවරයා - ගණිතය</p>
+                        <div class="provider-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <span class="review-count">(67 සමාලෝචන)</span>
+                        </div>
+                        <p class="provider-experience"><i class="fas fa-briefcase"></i> වසර 10+ පළපුරුද්ද</p>
+                        <p class="provider-location"><i class="fas fa-map-marker-alt"></i> කොළඹ 03</p>
+                        <div class="provider-skills">
+                            <span class="skill-tag">ගණිතය</span>
+                            <span class="skill-tag">විද්‍යාව</span>
+                            <span class="skill-tag">ඔලිම්පියාඩ්</span>
+                        </div>
+                        <div class="provider-action">
+                            <a href="#" class="btn btn-primary btn-sm">පැතිකඩ බලන්න</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fas fa-phone"></i> ඇමතුම</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- සේවා සපයන්නා 3 -->
+                <div class="provider-card">
+                    <div class="provider-image">
+                        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="සුනිල් ගුණසේකර">
+                    </div>
+                    <div class="provider-info">
+                        <h3 class="provider-name">සුනිල් ගුණසේකර</h3>
+                        <p class="provider-category"><i class="fas fa-faucet"></i> වාහක</p>
+                        <div class="provider-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <span class="review-count">(89 සමාලෝචන)</span>
+                        </div>
+                        <p class="provider-experience"><i class="fas fa-briefcase"></i> වසර 12+ පළපුරුද්ද</p>
+                        <p class="provider-location"><i class="fas fa-map-marker-alt"></i> මහරගම</p>
+                        <div class="provider-skills">
+                            <span class="skill-tag">නල</span>
+                            <span class="skill-tag">කාලු</span>
+                            <span class="skill-tag">පොම්ප</span>
+                        </div>
+                        <div class="provider-action">
+                            <a href="#" class="btn btn-primary btn-sm">පැතිකඩ බලන්න</a>
+                            <a href="#" class="btn btn-outline btn-sm"><i class="fas fa-phone"></i> ඇමතුම</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="providers.html" class="btn btn-primary">සියලුම සේවා සපයන්නන් බලන්න <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- අප ගැන කොටස -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">අප <span class="highlight">ගැන</span></h2>
+                    <p class="about-description">
+                        <strong>ගෙදර සේවය</strong> යනු ශ්‍රී ලංකාවේ ගෘහස්ථ සේවා අවශ්‍යතා සඳහා පූර්ණ විසඳුමක් සපයන නායක වෙබ් අඩවියකි. අපි ගෘහස්ථයන් සහ විශ්වසනීය සේවා සපයන්නන් අතර සම්බන්ධකයක් ලෙස සේවය කරමු.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>විශ්වසනීය සේවා සපයන්නන්</h4>
+                                <p>සියලුම සේවා සපයන්නන් අප විසින් පරීක්ෂා කර සත්‍යාපනය කරනු ලැබේ.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-holding-usd"></i>
+                            <div>
+                                <h4>සාධාරණ මිලක්</h4>
+                                <p>කිසිදු අතිරේක ගාස්තුවක් නොමැතිව පාරදෘශ්‍ය මිලක්.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4>24/7 සහාය සේවාව</h4>
+                                <p>ඔබට ඕනෑම ගැටලුවක් සඳහා දින 24 පුරාම සහාය ලබාගත හැකිය.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">අප හා සම්බන්ධ වන්න</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="ගෙදර සේවය කණ්ඩායම">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- සම්බන්ධ වන්න කොටස -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">අප හා <span class="highlight">සම්බන්ධ වන්න</span></h2>
+                <p class="section-subtitle">ඔබට ඕනෑම ප්‍රශ්නයක් ඇත්නම් අප හා සම්බන්ධ වන්න</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>දුරකථන අංකය</h4>
+                            <p>0112 345 678</p>
+                            <p>0777 123 456</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>ඊමේල් ලිපිනය</h4>
+                            <p>info@gedarasevaya.lk</p>
+                            <p>support@gedarasevaya.lk</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>ලිපිනය</h4>
+                            <p>අංක 123, ගල්කිස්ස මාවත, කොළඹ 05, ශ්‍රී ලංකාව</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>වැඩ කරන වේලාවන්</h4>
+                            <p>සඳුදා - සිකුරාදා: 8.00 AM - 6.00 PM</p>
+                            <p>සෙනසුරාදා: 8.00 AM - 1.00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="ඔබේ සම්පූර්ණ නම" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="ඔබේ ඊමේල් ලිපිනය" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="ඔබේ දුරකථන අංකය" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" required>
+                                <option value="">විෂය තෝරන්න</option>
+                                <option value="general">සාමාන්‍ය විමසුම</option>
+                                <option value="service">සේවා විමසුම</option>
+                                <option value="provider">සේවා සපයන්නෙක් ලෙස ලියාපදිංචි වීම</option>
+                                <option value="complaint">පැමිණිල්ල</option>
+                                <option value="feedback">ප්‍රතිපෝෂණය</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="ඔබේ පණිවිඩය" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">පණිවිඩය යවන්න</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- පාදය -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="ගෙදර සේවය" height="40">
+                        <h3>ගෙදර සේවය</h3>
+                    </div>
+                    <p class="footer-description">
+                        ඔබේ ගෙදර සියලු අවශ්‍යතා සඳහා විශ්වසනීය සේවා සපයන්නන් සමඟ සම්බන්ධ වන්න.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">සබැඳි</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">මුල් පිටුව</a></li>
+                        <li><a href="services.html">සේවා</a></li>
+                        <li><a href="providers.html">සේවා සපයන්නන්</a></li>
+                        <li><a href="#how-it-works">ක්‍රියාකාරීත්වය</a></li>
+                        <li><a href="#about">අප ගැන</a></li>
+                        <li><a href="#contact">සම්බන්ධ වන්න</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">සේවා</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#electrician">විදුලි කාර්මික</a></li>
+                        <li><a href="services.html#plumber">වාහක</a></li>
+                        <li><a href="services.html#electronics">TV හා ඉලෙක්ට්‍රොනික</a></li>
+                        <li><a href="services.html#tutors">ගුරුවරුන්</a></li>
+                        <li><a href="services.html#drivers">රියැදුරු</a></li>
+                        <li><a href="services.html#maids">මෙසේන් සේවා</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-title">නවතම පුවත්</h4>
+                    <div class="footer-news">
+                        <div class="news-item">
+                            <h5>නව සේවා සපයන්නන්</h5>
+                            <p>වැඩිදුරටත් සේවා දීමට නව සේවා සපයන්නන් අප හා එක්වී ඇත.</p>
+                        </div>
+                        <div class="news-item">
+                            <h5>මොබයිල් යෙදුම</h5>
+                            <p>අපගේ මොබයිල් යෙදුම දැන් Google Play Store හි ලබාගත හැකිය.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2023 ගෙදර සේවය. සියලුම හිමිකම් ඇවිරිණි.</p>
+                </div>
+                <div class="footer-legal">
+                    <a href="privacy.html">පෞද්ගලිකත්ව ප්‍රතිපත්තිය</a>
+                    <a href="terms.html">සේවා කොන්දේසි</a>
+                    <a href="cookies.html">කුකී ප්‍රතිපත්තිය</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ඉහළට යාම බොත්තම -->
+    <button id="scrollTop" class="scroll-top-btn">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript ගොනු -->
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
